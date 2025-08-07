@@ -1,0 +1,64 @@
+int testFunction(){
+    int res = 0b1001;
+    return res;
+}
+
+int binaryNumber = 0b0101010;
+int hexNumber = 0x0123456789aAbBcCdDeEfF;
+int x = 0;
+string str = "testing'n \n\t\\;,.0.02-=+:|\"<>?()[]{}_!@#$%^&*~`";
+string escapes = "\\\t\n\0\"\'\?\a\b\f\r\v";
+string strSQ = 'string with " single quotes and escapes \'\'\\';
+//Ignore this line
+int y = &x;
+int z = (x + y) ** 2;
+z /= 10;
+const float testFloat = 5.012/3.19;
+{
+    x == y;
+    x !== y;
+    x ~== y;
+    y === z;
+    z !~= y;
+}
+/*
+    Multiline comment
+*/
+test_function_call(x, y, &z, 3, 1+1);
+float arrTest[] = {0.0, 1.1, 1.1*2};
+arrTest[0, 1];
+arrTest[-1];
+if(1 ~== 1.000000001){
+    break;
+}
+for(int i=0;i<10;++i){
+
+}
+int i = 30;
+while(--i > 0){
+
+}
+scope scopeTest{
+    if(true){
+        break(scopeTest);
+    }
+}
+{
+    int x = 1;
+    {
+        int x = 2;
+        {
+            int x = &$x;
+            break(2);
+        }
+    }
+}
+scope scopeVarTest = {
+    int x = 2;
+    int $y = 3;
+}
+float $superGlobalTest = 5;
+superGlobalTest = 6;
+float measurementTest = 1ft+6in + 3m-10mm;
+float negative = -1;
+float sub = 10 - 5;

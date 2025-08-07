@@ -3,7 +3,7 @@ MAKEFILE_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 include $(MAKEFILE_DIR)/make/colors.mak
 include $(MAKEFILE_DIR)/make/constants.mak
 
-override FILES := version
+override FILES := version tokenizer parser
 override FILES_HEADER_ONLY := 
 override SRC := $(addprefix src/, $(addsuffix .cpp, $(FILES)))
 override OBJ := $(addprefix .o/, $(addsuffix .o, $(FILES)))

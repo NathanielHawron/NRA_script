@@ -12,5 +12,5 @@ namespace nra_script{
         inline bool operator!=(const Version &v) const {return !((*this) == v);};
     };
     extern const Version LIB_VERSION;
-    constexpr Version HEADER_VERSION{0,0,0,'a'};
+    constexpr Version HEADER_VERSION{0,0,1,'a'};
 }
